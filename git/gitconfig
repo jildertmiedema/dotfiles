@@ -1,9 +1,21 @@
+[alias]
+	c = commit -am	
+	df = diff --color --color-words --abbrev
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+
+
+[url "git@github.com:"]
+	insteadOf = "https://github.com/"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+	pushInsteadOf = "https://github.com/"
+
+
 [include]
 	path = ~/.gitconfig.local
 
 # correct typos
 [help]
 	autocorrect = 1
-[user]
-	email = jildert@juntos.nl
-	name = Jildert Miedema
+
