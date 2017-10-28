@@ -1,0 +1,9 @@
+[include]
+	path = ~/.gitconfig.local
+
+# correct typos
+[help]
+	autocorrect = 1
+[user]
+	email = jildert@juntos.nl
+	name = Jildert Miedema

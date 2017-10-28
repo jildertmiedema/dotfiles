@@ -15,10 +15,6 @@
 #
 #  ---------------------------------------------------------------------------
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
@@ -44,7 +40,6 @@ parse_git_branch() {
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 
-source ~/.bash_prompt
 
 for file in ~/.{bash_prompt}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
@@ -81,7 +76,6 @@ unset file;
 #   2.  MAKE TERMINAL BETTER
 #   -----------------------------
 
-alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFhl'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation

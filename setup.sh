@@ -171,11 +171,9 @@ declare -a FILES_TO_SYMLINK=(
   'shell/bash_prompt'
   'shell/bashrc'
   'shell/zshrc'
+  'shell/tmux.conf'
   'shell/ackrc'
   'shell/curlrc'
-  'shell/gemrc'
-  'shell/inputrc'
-  'shell/screenrc'
 
   'git/gitattributes'
   'git/gitconfig'

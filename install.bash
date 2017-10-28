@@ -1,5 +1,5 @@
 #!/bin/bash
-groups=(frontend backend tools)
+groups=(common frontend backend tools)
 installers=()
 dir=$(dirname "$0")
 

@@ -33,7 +33,7 @@ export PATH
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="jildert"
+ZSH_THEME="agnoster"
 
 # Z beats cd most of the time
 . ~/z/z.sh
@@ -65,7 +65,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(node npm history git git-flow vagrant zsh-syntax-highlighting)
+plugins=(node history git git-flow vagrant zsh-syntax-highlighting)
 
 # User configuration
 
@@ -89,5 +89,8 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.zsh.local ] && source ~/.zsh.local
 
 # npm tab completion
-. <(npm completion)
 
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi
