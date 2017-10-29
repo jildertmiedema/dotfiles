@@ -7,4 +7,4 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 
 
 sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt-get install -y sublime-text
