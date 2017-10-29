@@ -14,5 +14,10 @@ sudo apt-get update
 
 sudo apt-get install -y docker-ce
 
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+sudo systemctl enable docker
+
 #docker run --name mysql57 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
-#docker run --name redis40 -p 6379:6379-d redis:4.0
+#docker run --name redis40 -p 6379:6379 -d redis:4-alpine
