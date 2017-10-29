@@ -11,6 +11,7 @@ dirs_to_prepend=(
   "/usr/local/mysql/bin"
   "/sw/bin/"
   "$HOME/dotfiles/bin"
+  "$HOME/.config/composer/vendor/bin"
   "$HOME/bin"
 )
 

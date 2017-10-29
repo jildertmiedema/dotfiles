@@ -225,7 +225,8 @@ main() {
   unset FILES_TO_SYMLINK
 
   # Copy binaries
-  ln -fs $HOME/dotfiles/bin $HOME
+  mkdir $HOME/bin
+  cp $HOME/dotfiles/bin/* $HOME/bin
 
   declare -a BINARIES=(    
     'git-delete-merged-branches'    
