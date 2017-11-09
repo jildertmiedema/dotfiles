@@ -15,7 +15,8 @@
 [include]
 	path = ~/.gitconfig.local
 
-# correct typos
 [help]
 	autocorrect = 1
 
+[push]
+	default = simple
