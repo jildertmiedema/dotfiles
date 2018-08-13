@@ -2,15 +2,13 @@
 	c = commit -am	
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-
-
+        cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 
 [url "git@github.com:"]
 	insteadOf = "https://github.com/"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
 	pushInsteadOf = "https://github.com/"
-
 
 [include]
 	path = ~/.gitconfig.local
@@ -19,4 +17,15 @@
 	autocorrect = 1
 
 [push]
-	default = simple
+	default = matching
+
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /usr/bin/gpg
+
