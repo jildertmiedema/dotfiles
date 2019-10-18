@@ -21,3 +21,4 @@ sudo systemctl enable docker
 
 #docker run --name mysql57 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
 #docker run --name redis40 -p 6379:6379 -d redis:4-alpine
+docker run --name mariadb103 -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb:10.3

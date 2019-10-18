@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Idea URL Handler
+Comment=Handle URL Scheme idea://open?url=file://@file&line=@line
+Icon=idea
+NoDisplay=true
+Categories=TextEditor;Utility;
+Exec=idea-url-handler %u
+Terminal=false
+MimeType=x-scheme-handler/idea;
+X-Desktop-File-Install-Version=0.21
