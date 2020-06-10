@@ -200,3 +200,7 @@ done
 
 alias minikubesleep="virsh managedsave minikube --running"
 alias minikubestart="virsh start minikube"
+
+alias k8sctx="kubectl config use-context"
+alias k8snss="kubectl get namespace -o wide"
+alias k8sns="kubectl config set-context --current --namespace "
